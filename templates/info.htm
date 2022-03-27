@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <title>Requerimento</title>
+</head>
+<body>
+    <div>
+        <h2>Dados Necessários</h2>
+        <form action="/resultados" method='post'>
+            <input type="text" placeholder="Nome da instituição" class="input1" name="Nome da instituição">
+            <input type="text" placeholder="CPF" class="input1" name="CPF">
+            <input type="text" placeholder="estado civil" class="input1" name="Estado civil">
+            <input type="text" placeholder="Nome do requerente" class="input1" name="Nome do requerente">
+            <input type="text" placeholder="CEP" class="input1" name="Cep">
+            <input type="text" placeholder="RG" class="input1" name="Rg">
+            <input type="text" placeholder="Rua onde mora" class="input1" name="rua">
+            <input type="text" placeholder="Número de processo" class="input1" name="Número de processo">
+            <input type="text" placeholder="Cidade" class="input1" name="Cidade">
+            <input type="date" placeholder="dia" class="input1" name="Dia">
+            <button type="submit">Gerar PDF</button>
+        </form>
+</body>
+</html>
